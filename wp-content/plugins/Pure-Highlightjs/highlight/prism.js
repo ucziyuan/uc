@@ -110,7 +110,7 @@ Prism.languages.python = { comment: { pattern: /(^|[^\\])#.*/, lookbehind: !0 },
 				resetText();
 			});
 			clip.on('error', function () {
-				linkCopy.textContent = 'Press Ctrl+C to copy';
+				linkCopy.textContent = '请按 Ctrl+C 复制';
 
 				resetText();
 			});
@@ -118,7 +118,7 @@ Prism.languages.python = { comment: { pattern: /(^|[^\\])#.*/, lookbehind: !0 },
 
 		function resetText() {
 			setTimeout(function () {
-				linkCopy.textContent = 'Copy';
+				linkCopy.textContent = '复制';
 			}, 5000);
 		}
 	});
